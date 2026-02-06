@@ -282,14 +282,20 @@ src/main/AndroidManifest.xml:
 * **su.xash.engine.gamedir** value - set to same as above.
 
 ### Building in Termux
+**termuxbuild.sh** script compiles libs with cmake and manually builds launcher app.
 Works only on arm64-v8a, on armv7 you should use proot and box86 to "emulate" Linux x86(very slow).
-Open termuxbuild.sh file in android directory and follow instructions located in it.
 
 ```
 cd android
-nano termuxbuild.sh
+bash termuxbuild.sh
 ```
 
+After installing build tools and building launcher you can open termuxbuild.sh file and follow
+instructions located in it
+
+```
+nano termuxbuild.sh
+```
 
 ## Nintendo Switch
 
