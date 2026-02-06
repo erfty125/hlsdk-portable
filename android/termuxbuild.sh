@@ -1,5 +1,5 @@
 #0. install build tools:
-#   apt update && apt install nano aapt openjdk-21 dx apksigner cmake
+#   apt update && apt install aapt openjdk-21 dx apksigner cmake
 #1. install https://github.com/lzhiyong/termux-ndk( to compile libs ),
 #  set path to this dir in NDKDIR variable
 #2. get android.jar file, for example:
