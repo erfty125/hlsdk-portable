@@ -281,6 +281,16 @@ src/main/AndroidManifest.xml:
 * **application->android:label** - set desired application name.
 * **su.xash.engine.gamedir** value - set to same as above.
 
+### Building in Termux
+Works only on arm64-v8a, on armv7 you should use proot and box86 to "emulate" Linux x86(very slow).
+Open termuxbuild.sh file in android directory and follow instructions located in it.
+
+```
+cd android
+nano termuxbuild.sh
+```
+
+
 ## Nintendo Switch
 
 ### Prerequisites
