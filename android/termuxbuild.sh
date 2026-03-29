@@ -61,6 +61,13 @@ APF=" -I ${AJAR} -f -M build/AndroidManifest.xml \
 ##########
 set -e
 
+arch=$(uname -m)
+if [ "$arch" != "aarch64" ]; then
+  echo "Host architecture is not aarch64 :skull: :skull: \n btw u can try use proot-distro, box32/64 and such stuff to build mod launcher"
+  exit 1  # exit with error status
+fi
+
+
 for n in aapt dx javac cmake apksigner 7z build-essential
 do
 if command -v $n >/dev/null 2>&1; then
